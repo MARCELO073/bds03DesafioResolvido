@@ -42,7 +42,7 @@ public class EmployeeControllerIT {
 		
 		operatorUsername = "ana@gmail.com";
 		operatorPassword = "123456";
-		adminUsername = "bob@gmail.com";
+		adminUsername = "bob@gmail.com";	
 		adminPassword = "123456";
 	}
 	
@@ -62,7 +62,7 @@ public class EmployeeControllerIT {
 					.accept(MediaType.APPLICATION_JSON));
 		
 		result.andExpect(status().isForbidden());
-	}	
+	}		
 
 	@Test
 	public void insertShouldReturn401WhenNoUserLogged() throws Exception {
